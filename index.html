@@ -3,25 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Midwave Radio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
+    <h1>Midwave Radio</h1>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="http://midwaveradio.com/timetable">Timetable</a></li>
+        <li><a href="https://www.instagram.com/midwaveradio/">Events</a></li>
+        <li><a href="http://midwaveradio.com/about-us">About Us</a></li>
+        <li><a href="http://midwaveradio.com/contact">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <h1>Welcome to my website!</h1>
-    <p>This is some sample text.</p>
+    <div id="images">
+      <div id="play">
+        <img id="play-img" src="images/play.png" />
+        <div id="play-text">Play</div>
+      </div>
+      <img id="monster" src="images/Image.png" alt="Monster" />
+    </div>
   </main>
   <footer>
-    <p>&copy; 2023 My Website</p>
+    <p>&copy; 2023 Midwave Radio</p>
   </footer>
 </body>
 </html>
+
+<style>
+  @font-face {
+  font-family: Darumadrop;
+  src: url('./fonts/Darumadrop_One/DarumadropOne-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Darumadrop;
+    font-size: 25px;
+    line-height: 1.5;
+    background-color: rgb(215, 215, 215);
+  }
+  
+  header {
+    display: flex;
+    /* background-color: rgb(210, 210, 210); */
+    color: black;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    vertical-align: center;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 1rem;
+    height: fit-content;
+  }
+  
+  footer {
+    /* background-color: rgb(210, 210, 210); */
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    bottom: 0;
+    position: relative;
+  }
+
+  #images {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 80vh;
+  }
+
+  #monster {
+    position: absolute;
+    width: 70vw;
+    left: 16%;
+    /* max-height: 90vh; */
+    top: -50px;
+    /* padding-bottom: 20px; */
+  }
+
+  #play-img {
+    position: relative;
+    width: 15vw;
+    /* width: 15vw;
+    left: 18%;
+    top: -25px; */
+  }
+
+  #play {
+    position: relative;
+    text-align: center;
+    width: 15vw;
+    left: 18%;
+    top: -25px;
+  }
+
+  #play-text {
+    position: absolute;
+    font-family: Darumadrop;
+    font-size: 50px;
+    color: black;
+    left: 30%;
+    top: 50px;
+  }
+
+  
+</style>

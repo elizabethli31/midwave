@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Darumadrop;
+  src: url('./fonts/Darumadrop_One/DarumadropOne-Regular.ttf');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,18 +10,24 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-family: Darumadrop;
+    font-size: 25px;
     line-height: 1.5;
+    background-color: rgb(215, 215, 215);
   }
   
   header {
-    background-color: #333;
-    color: #fff;
+    display: flex;
+    /* background-color: rgb(210, 210, 210); */
+    color: black;
     padding: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   
   nav ul {
+    vertical-align: center;
     list-style: none;
     display: flex;
   }
@@ -26,18 +37,63 @@
   }
   
   nav a {
-    color: #fff;
+    color: black;
     text-decoration: none;
   }
   
   main {
     padding: 1rem;
+    height: fit-content;
   }
   
   footer {
-    background-color: #333;
-    color: #fff;
+    /* background-color: rgb(210, 210, 210); */
+    color: black;
     padding: 1rem;
     text-align: center;
+    bottom: 0;
+    position: relative;
   }
+
+  #images {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 80vh;
+  }
+
+  #monster {
+    position: absolute;
+    width: 70vw;
+    left: 16%;
+    /* max-height: 90vh; */
+    top: -50px;
+    /* padding-bottom: 20px; */
+  }
+
+  #play-img {
+    position: relative;
+    width: 15vw;
+    /* width: 15vw;
+    left: 18%;
+    top: -25px; */
+  }
+
+  #play {
+    position: relative;
+    text-align: center;
+    width: 15vw;
+    left: 18%;
+    top: -25px;
+  }
+
+  #play-text {
+    position: absolute;
+    font-family: Darumadrop;
+    font-size: 50px;
+    color: black;
+    left: 30%;
+    top: 50px;
+  }
+
   
